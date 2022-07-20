@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) throws Exception {
+
+		Scanner sc = new Scanner(System.in);
+
+		int x, y;
+
+		System.out.println("Digite os valores de X e Y:");
+		x = sc.nextInt();
+		y = sc.nextInt();
+
+		while (x != 0 && y != 0) {
+
+			if (x > 0 && y > 0)
+				System.out.println("QUADRANTE Q1");
+			if (x < 0 && y > 0)
+				System.out.println("QUADRANTE Q2");
+			if (x < 0 && y < 0)
+				System.out.println("QUADRANTE Q3");
+			if (x > 0 && y < 0)
+				System.out.println("QUADRANTE Q4");
+
+			x = sc.nextInt();
+			y = sc.nextInt();
+
+		}
+
+		sc.close();
+
+	}
+}
